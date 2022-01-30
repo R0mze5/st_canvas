@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 -87 100 116" >
+  <title>Koch's snowflake</title>
+  <desc>fractal, triangle, geometric, hexagon, snowflake</desc>
+  <defs>
+<path fill="#09f" stroke="#09f" stroke-width=".5"
+       d="M0 0 h100 l-50 -86.6 z"
+       id="tri" />
+<g id="l1">
+<g transform="translate(33.33)"><use xlink:href="#tri" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#tri" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#tri" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#tri" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#tri" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#tri" transform="scale(0.333333)" />
+</g>
+<g id="l2">
+<g transform="translate(33.33)"><use xlink:href="#l1" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#l1" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#l1" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#l1" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#l1" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#l1" transform="scale(0.333333)" />
+</g>
+<g id="l3">
+<g transform="translate(33.33)"><use xlink:href="#l2" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#l2" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#l2" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#l2" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#l2" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#l2" transform="scale(0.333333)" />
+</g>
+<g id="l4">
+<g transform="translate(33.33)"><use xlink:href="#l3" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#l3" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#l3" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#l3" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#l3" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#l3" transform="scale(0.333333)" />
+</g>
+<g id="l5">
+<g transform="translate(33.33)"><use xlink:href="#l4" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#l4" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#l4" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#l4" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#l4" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#l4" transform="scale(0.333333)" />
+</g>
+<g id="l6">
+<g transform="translate(33.33)"><use xlink:href="#l5" transform="rotate(60) scale(0.333333)" /></g>
+<g transform="translate(16.666667,-28.86751)"><use xlink:href="#l5" transform="rotate(-60) scale(0.333333)" /></g>
+<g transform="translate(100,-57.735)"><use xlink:href="#l5" transform="rotate(180) scale(0.333333)" /></g>
+<use xlink:href="#l5" transform="translate(33.3333,-57.735) scale(0.333333)" />
+<use xlink:href="#l5" transform="translate(66.666667) scale(0.333333)" />
+<use xlink:href="#l5" transform="scale(0.333333)" />
+</g>
+</defs>
+<use xlink:href="#tri" opacity="0.5" />
+<use xlink:href="#l1" />
+<use xlink:href="#l2" />
+<use xlink:href="#l3" />
+<use xlink:href="#l4" />
+<use xlink:href="#l5" />
+<use xlink:href="#l6" />
+</svg>

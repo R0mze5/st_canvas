@@ -1,0 +1,73 @@
+@keyframes bgMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 450px 0;
+  }
+}
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+}
+
+.cursor {
+  will-change: auto;
+  --cursor-size: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--cursor-size);
+  height: var(--cursor-size);
+  border-radius: 80px;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: #29044a;
+  transition: width 300ms, height 300ms;
+
+  &.is-down {
+    --cursor-size: 80px;
+  }
+}
+
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: lighten;
+}
+
+.pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4d4d4;
+  background-image: url(./images/pattern.svg);
+  background-size: 450px;
+  animation: bgMove 10s infinite linear;
+}
+.lineup {
+  background-color: #8f12fd;
+  background-image: url(./images/lineup.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #d4d4d4;
+}
+
+.scratched {
+  &-out {
+    mix-blend-mode: darken;
+  }
+}
